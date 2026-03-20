@@ -9,44 +9,126 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  text-align: center;
-  background: #fff;
+  background: #f5f5f5;
 }
 
-img {
-  width: 100%;
-  display: block;
+/* HERO */
+.hero {
+  background: url("https://images.unsplash.com/photo-1597262975002-c5c3b14bbd62") center/cover;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-box {
+  background: rgba(0,0,0,0.6);
+  padding: 25px;
+  border-radius: 15px;
+  text-align: center;
+  color: white;
+}
+
+.hero h1 {
+  margin: 0;
+  font-size: 28px;
+}
+
+.hero p {
+  margin: 10px 0;
 }
 
 .btn {
-  position: fixed;
-  bottom: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  background: #ff8c00;
+  display: inline-block;
+  background: orange;
   color: white;
-  padding: 15px 25px;
+  padding: 12px 25px;
   border-radius: 30px;
   text-decoration: none;
   font-weight: bold;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
 }
+
+/* SERVICES */
+.section {
+  padding: 30px;
+  text-align: center;
+}
+
+.services {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.service {
+  background: #eaeaea;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+/* AVANT APRES */
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.gallery img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* CONTACT */
+.contact {
+  background: #2e7d32;
+  color: white;
+  text-align: center;
+  padding: 30px;
+}
+
 </style>
 </head>
 
 <body>
 
-<!-- IMAGE 1 -->
-<img src="IMAGE1.jpg">
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-box">
+    <h1>PRO ÉLAGAGE ESPACE VERT</h1>
+    <p>Devis Gratuit - Intervention Rapide</p>
+    <a href="tel:0612395586" class="btn">📞 Appeler</a>
+  </div>
+</div>
 
-<!-- IMAGE 2 -->
-<img src="IMAGE2.jpg">
+<!-- SERVICES -->
+<div class="section">
+  <h2>Nos services</h2>
+  <div class="services">
+    <div class="service">Élagage & abattage</div>
+    <div class="service">Taille de haies</div>
+    <div class="service">Entretien de jardin</div>
+    <div class="service">Débroussaillage</div>
+    <div class="service">Nettoyage terrain</div>
+  </div>
+</div>
 
-<!-- IMAGE 3 -->
-<img src="IMAGE3.jpg">
+<!-- AVANT APRES -->
+<div class="section">
+  <h2>Avant / Après</h2>
+  <div class="gallery">
+    <img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6">
+    <img src="https://images.unsplash.com/photo-1592840062661-7d4cde6b2d8e">
+    <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb">
+    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c">
+  </div>
+</div>
 
-<!-- BOUTON APPEL -->
-<a href="tel:0612395586" class="btn">📞 Appeler maintenant</a>
+<!-- CONTACT -->
+<div class="contact">
+  <h2>Contact</h2>
+  <p>📞 06 12 39 55 86</p>
+  <a href="tel:0612395586" class="btn">Appeler maintenant</a>
+</div>
 
 </body>
 </html>
