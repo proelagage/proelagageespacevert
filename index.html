@@ -14,8 +14,8 @@ body {
 
 /* HEADER */
 .header {
-  height: 90vh;
-  background: url("https://images.unsplash.com/photo-1600585154340-be6161a56a0c") center/cover no-repeat;
+  height: 85vh;
+  background: url("https://images.unsplash.com/photo-1627308595229-7830a5c91f9f") center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -23,10 +23,10 @@ body {
 
 .overlay {
   background: rgba(0,0,0,0.6);
-  padding: 25px;
+  padding: 20px;
   border-radius: 15px;
-  color: white;
   text-align: center;
+  color: white;
 }
 
 .overlay h1 {
@@ -42,7 +42,7 @@ body {
   display: inline-block;
   margin-top: 15px;
   padding: 14px 25px;
-  background: orange;
+  background: #ff8800;
   color: white;
   text-decoration: none;
   border-radius: 30px;
@@ -69,10 +69,15 @@ body {
 }
 
 /* AVANT APRES */
+.gallery {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
 .gallery img {
   width: 100%;
   border-radius: 10px;
-  margin-bottom: 15px;
 }
 
 /* CONTACT */
@@ -84,32 +89,15 @@ body {
   padding: 40px 20px;
 }
 
-.contact h2 {
-  margin-bottom: 10px;
-}
-
 .btn2 {
   display: inline-block;
   margin-top: 15px;
   padding: 15px 25px;
-  background: orange;
+  background: #ff8800;
   color: white;
   text-decoration: none;
   border-radius: 30px;
   font-weight: bold;
-}
-
-/* WHATSAPP */
-.whatsapp {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background: #25D366;
-  color: white;
-  font-size: 25px;
-  padding: 15px;
-  border-radius: 50%;
-  text-decoration: none;
 }
 </style>
 </head>
@@ -119,7 +107,7 @@ body {
 <!-- HEADER -->
 <div class="header">
   <div class="overlay">
-    <h1>PRO ÉLAGAGE ESPACE VERT</h1>
+    <h1>PRO ELAGAGE ESPACE VERT</h1>
     <p>Devis Gratuit - Intervention Rapide</p>
     <a href="tel:0612395586" class="btn">📞 Appeler</a>
   </div>
@@ -134,11 +122,10 @@ body {
     <div class="card">Entretien de jardin</div>
     <div class="card">Débroussaillage</div>
     <div class="card">Nettoyage terrain</div>
-    <div class="card">Évacuation déchets verts</div>
   </div>
 </div>
 
-<!-- AVANT APRES -->
+<!-- AVANT / APRES -->
 <div class="section">
   <h2>Avant / Après</h2>
   <div class="gallery">
@@ -153,9 +140,6 @@ body {
   <p>📞 06 12 39 55 86</p>
   <a href="tel:0612395586" class="btn2">📞 Appeler maintenant</a>
 </div>
-
-<!-- WHATSAPP -->
-<a class="whatsapp" href="https://wa.me/33612395586">💬</a>
 
 </body>
 </html>
