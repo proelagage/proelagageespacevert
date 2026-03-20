@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -6,156 +7,61 @@
 <title>Pro Élagage Espace Vert</title>
 
 <style>
-body{
-margin:0;
-font-family:Arial;
-background:#f2f2f2;
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f2f2f2;
 }
 
 /* HERO */
-.hero{
-height:400px;
-background:url("https://images.unsplash.com/photo-1600880292203-757bb62b4baf?q=80&w=1200") center/cover;
-display:flex;
-align-items:flex-end;
+.hero {
+  background: url("https://images.unsplash.com/photo-1581578731548-c64695cc6952") center/cover no-repeat;
+  height: 85vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.overlay{
-background:rgba(0,0,0,0.6);
-margin:20px;
-padding:20px;
-border-radius:15px;
-color:white;
-width:100%;
+.overlay {
+  background: rgba(0,0,0,0.6);
+  padding: 25px;
+  border-radius: 15px;
+  text-align: center;
+  color: white;
+  width: 85%;
 }
 
-.overlay h1{
-margin:0;
-font-size:26px;
+.overlay h1 {
+  margin: 0;
+  font-size: 26px;
 }
 
-.btn{
-display:inline-block;
-margin-top:10px;
-background:#ff8c00;
-padding:12px 20px;
-border-radius:30px;
-color:white;
-text-decoration:none;
-font-weight:bold;
+.overlay p {
+  margin: 10px 0 20px;
+}
+
+.btn {
+  background: #ff8c00;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
 }
 
 /* SERVICES */
-.section{
-padding:30px 20px;
-text-align:center;
+.section {
+  padding: 30px 15px;
+  text-align: center;
 }
 
-.services{
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:15px;
+.services {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-top: 15px;
 }
 
-.service{
-background:#e6e6e6;
-padding:15px;
-border-radius:12px;
-}
-
-/* AVANT APRES */
-.grid{
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:10px;
-}
-
-.grid img{
-width:100%;
-border-radius:12px;
-}
-
-/* CONTACT */
-.contact{
-background:url("https://images.unsplash.com/photo-1501004318641-b39e6451bec6?q=80&w=1200") center/cover;
-color:white;
-text-align:center;
-padding:40px 20px;
-}
-
-.contact a{
-display:inline-block;
-margin-top:15px;
-background:#ff8c00;
-padding:12px 25px;
-border-radius:30px;
-color:white;
-text-decoration:none;
-font-weight:bold;
-}
-
-/* WHATSAPP */
-.whatsapp{
-position:fixed;
-bottom:20px;
-right:20px;
-background:#25D366;
-width:55px;
-height:55px;
-border-radius:50%;
-display:flex;
-align-items:center;
-justify-content:center;
-color:white;
-font-size:22px;
-text-decoration:none;
-}
-</style>
-</head>
-
-<body>
-
-<!-- HERO -->
-<div class="hero">
-<div class="overlay">
-<h1>PRO ÉLAGAGE ESPACE VERT</h1>
-<p>Devis Gratuit - Intervention Rapide</p>
-<a href="tel:0612395586" class="btn">📞 Appeler</a>
-</div>
-</div>
-
-<!-- SERVICES -->
-<div class="section">
-<h2>Nos services</h2>
-<div class="services">
-<div class="service">Élagage & abattage</div>
-<div class="service">Taille de haies</div>
-<div class="service">Entretien de jardin</div>
-<div class="service">Débroussaillage</div>
-<div class="service">Nettoyage terrain</div>
-</div>
-</div>
-
-<!-- AVANT APRES -->
-<div class="section">
-<h2>Avant / Après</h2>
-<div class="grid">
-<img src="https://images.unsplash.com/photo-1560743641-3914f2c45636?q=80&w=600">
-<img src="https://images.unsplash.com/photo-1601758003122-53c40e686a19?q=80&w=600">
-<img src="https://images.unsplash.com/photo-1597262975002-c5c3b14bbd62?q=80&w=600">
-<img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?q=80&w=600">
-</div>
-</div>
-
-<!-- CONTACT -->
-<div class="contact">
-<h2>Contact</h2>
-<p>📞 06 12 39 55 86</p>
-<a href="tel:0612395586">📞 Appeler maintenant</a>
-</div>
-
-<!-- WHATSAPP -->
-<a href="https://wa.me/33612395586" class="whatsapp">💬</a>
-
-</body>
-</html>
+.service {
+  background:
