@@ -3,97 +3,148 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Pro Élagage</title>
+
+<title>Pro Élagage Espace Vert | Gironde</title>
 
 <style>
-body{margin:0;font-family:Arial;background:#f5f5f5;}
-
-.hero{
-background:url("elagage1.jpg") center/cover;
-height:90vh;
-display:flex;
-align-items:center;
-justify-content:center;
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
 }
 
-.box{
-background:rgba(0,0,0,0.6);
-color:white;
-padding:25px;
-border-radius:15px;
-text-align:center;
+/* HEADER */
+header {
+  background: #2e7d32;
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
 }
 
-.btn{
-background:orange;
-color:white;
-padding:12px 25px;
-border-radius:30px;
-text-decoration:none;
-display:inline-block;
-margin-top:10px;
+.btn {
+  display: inline-block;
+  background: #2e7d32;
+  color: white;
+  padding: 15px 25px;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 10px;
 }
 
-.section{padding:30px;text-align:center;}
-
-.grid{
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:10px;
+/* SECTIONS */
+section {
+  padding: 40px 20px;
+  text-align: center;
 }
 
-.card{
-background:#eaeaea;
-padding:15px;
-border-radius:10px;
+.services {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
 }
 
-img{width:100%;border-radius:10px;}
+.service {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 250px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
 
-.contact{
-background:#2e7d32;
-color:white;
-padding:30px;
-text-align:center;
+/* AVANT APRES */
+.avant-apres {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.avant-apres img {
+  width: 300px;
+  border-radius: 10px;
+}
+
+/* WHATSAPP FLOAT */
+.whatsapp {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #25D366;
+  color: white;
+  padding: 15px;
+  border-radius: 50%;
+  font-size: 22px;
+  text-decoration: none;
+}
+
+/* FOOTER */
+footer {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 20px;
 }
 </style>
+
 </head>
 
 <body>
 
-<div class="hero">
-<div class="box">
-<h1>PRO ÉLAGAGE ESPACE VERT</h1>
-<p>Devis Gratuit - Intervention Rapide</p>
-<a href="tel:0612395586" class="btn">📞 Appeler</a>
-</div>
-</div>
+<header>
+  <h1>🌳 Pro Élagage Espace Vert</h1>
+  <p>Élagage - Abattage - Entretien jardin</p>
+  <p><strong>📍 Intervention dans toute la Gironde (33)</strong></p>
 
-<div class="section">
-<h2>Nos services</h2>
-<div class="grid">
-<div class="card">Élagage & abattage</div>
-<div class="card">Taille de haies</div>
-<div class="card">Entretien jardin</div>
-<div class="card">Débroussaillage</div>
-</div>
-</div>
+  <a href="tel:0749001906" class="btn">📞 Appeler</a><br>
+  <a href="https://wa.me/33749001906" class="btn">💬 WhatsApp</a>
+</header>
 
-<div class="section">
-<h2>Avant / Après</h2>
-<div class="grid">
-<img src="avant.jpg">
-<img src="apres.jpg">
-<img src="elagage1.jpg">
-<img src="elagage2.jpg">
-</div>
-</div>
+<section>
+  <h2>Nos Services</h2>
 
-<div class="contact">
-<h2>Contact</h2>
-<p>06 12 39 55 86</p>
-<a href="tel:0612395586" class="btn">Appeler maintenant</a>
-</div>
+  <div class="services">
+    <div class="service">
+      <h3>Élagage</h3>
+      <p>Taille sécurisée de vos arbres</p>
+    </div>
+
+    <div class="service">
+      <h3>Abattage</h3>
+      <p>Intervention rapide et sécurisée</p>
+    </div>
+
+    <div class="service">
+      <h3>Entretien jardin</h3>
+      <p>Tonte, nettoyage, débroussaillage</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Avant / Après</h2>
+
+  <div class="avant-apres">
+    <img src="avant1.jpg">
+    <img src="apres1.jpg">
+
+    <img src="avant2.jpg">
+    <img src="apres2.jpg">
+  </div>
+</section>
+
+<section>
+  <h2>Contact</h2>
+  <p>📞 07 49 00 19 06</p>
+  <p>📍 Gironde (33)</p>
+</section>
+
+<footer>
+  <p>© 2026 Pro Élagage Espace Vert</p>
+</footer>
+
+<!-- BOUTON WHATSAPP FLOTTANT -->
+<a href="https://wa.me/33749001906" class="whatsapp">💬</a>
 
 </body>
 </html>
