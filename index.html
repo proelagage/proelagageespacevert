@@ -11,6 +11,7 @@ body {
     margin: 0;
     background: #000;
     text-align: center;
+    font-family: Arial, sans-serif;
 }
 
 /* image pub */
@@ -19,34 +20,57 @@ img {
     height: auto;
 }
 
-/* bouton WhatsApp */
-.whatsapp {
+/* conteneur boutons */
+.contact-buttons {
     position: fixed;
-    bottom: 20px;
+    bottom: 15px;
     left: 50%;
     transform: translateX(-50%);
-    background: #25D366;
-    color: white;
-    padding: 15px 25px;
-    font-size: 18px;
-    text-decoration: none;
-    border-radius: 40px;
-    font-weight: bold;
+    display: flex;
+    gap: 10px;
 }
+
+/* style boutons */
+.btn {
+    padding: 12px 18px;
+    border-radius: 30px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/* couleurs */
+.call { background: #2e7d32; }
+.whatsapp { background: #25D366; }
+.mail { background: #1976d2; }
 </style>
 
 </head>
 
 <body>
 
-<!-- 📸 METS TON IMAGE ICI -->
+<!-- 📸 TA PUB -->
 <img src="pub.jpg" alt="Pub élagage">
 
-<!-- 💬 bouton WhatsApp -->
-<a href="https://wa.me/33612395586?text=Bonjour%20je%20souhaite%20un%20devis%20pour%20des%20travaux%20d%27%C3%A9lagage"
-class="whatsapp">
-💬 Demande de devis
-</a>
+<!-- 🔥 BOUTONS -->
+<div class="contact-buttons">
+
+  <a href="tel:0612395586" class="btn call">
+    📞 Appeler
+  </a>
+
+  <a href="https://wa.me/33612395586?text=Bonjour%20je%20souhaite%20un%20devis%20pour%20des%20travaux%20d%27%C3%A9lagage"
+  class="btn whatsapp">
+    💬 WhatsApp
+  </a>
+
+  <a href="mailto:pro.elagage.espace.vert@gmail.com?subject=Demande%20de%20devis&body=Bonjour%2C%20je%20souhaite%20un%20devis"
+  class="btn mail">
+    📧 Email
+  </a>
+
+</div>
 
 </body>
 </html>
